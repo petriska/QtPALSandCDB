@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QCloseEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,6 +15,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+protected:
+    void closeEvent(QCloseEvent *event) override;
 
 private slots:
     void on_actionAbout_Qt_triggered();
@@ -21,6 +24,7 @@ private slots:
     void on_actionAbout_triggered();
 
 private:
+    bool maybeSave();
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H

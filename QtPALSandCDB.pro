@@ -26,6 +26,11 @@ unix:DEFINES+= OS_LINUX
 win32:DEFINES+= QWT_DLL
 win32:DEFINES+= NOLR
 
+BDIR = $$OUT_PWD
+BDIR_STRIPPED = $$replace(BDIR,Release,)
+equals (BDIR,$$BDIR_STRIPPED): DEFINES+= debugExec
+else: DEFINES+= releaseExec
+
 SOURCES += \
     DRS/DRS.cpp \
     DRS/averager.cpp \
