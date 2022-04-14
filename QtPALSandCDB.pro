@@ -68,5 +68,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    lib/x64/libusb-1.0.lib
+    lib/x64/libusb-1.0.lib \
+    resources.rc
 
+RESOURCES += \
+    icons.qrc
+win32:RC_FILE=resources.rc

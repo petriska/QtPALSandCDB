@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/icons/48">
+        <file>pict/appointment.svg</file>
+        <file>pict/dialog-error.svg</file>
+        <file>pict/dialog-information.svg</file>
+        <file>pict/dialog-password.svg</file>
+        <file>pict/dialog-question.svg</file>
+        <file>pict/dialog-warning.svg</file>
+        <file>pict/drive-removable-media-usb-pendrive.svg</file>
+        <file>pict/folder-alt.svg</file>
+        <file>pict/system-shutdown.svg</file>
+        <file>pict/audio-card.svg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>pict/drs4_eval5_front.jpg</file>
+    </qresource>
+</RCC>

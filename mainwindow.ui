@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>QtPALSandCDB</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
@@ -27,7 +27,6 @@
     <property name="title">
      <string>About</string>
     </property>
-    <addaction name="actionAbout"/>
     <addaction name="actionAbout_Qt"/>
    </widget>
    <widget class="QMenu" name="menuSettings">
@@ -50,16 +49,44 @@
     <addaction name="menuPALS"/>
     <addaction name="menuCDB"/>
    </widget>
+   <widget class="QMenu" name="menuSample">
+    <property name="title">
+     <string>Measurement</string>
+    </property>
+    <addaction name="actionSample_definition"/>
+    <addaction name="actionCDB"/>
+    <addaction name="actionPals"/>
+   </widget>
+   <addaction name="menuSample"/>
    <addaction name="menuSettings"/>
    <addaction name="menuAbout"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionDRS4"/>
+   <addaction name="actionPCI9820"/>
+   <addaction name="actionAbout"/>
+  </widget>
   <action name="actionAbout_Qt">
    <property name="text">
     <string>About Qt</string>
    </property>
   </action>
   <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icons/48/pict/dialog-information.svg</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>About</string>
    </property>
@@ -77,6 +104,27 @@
   <action name="actionresolution">
    <property name="text">
     <string>resolution</string>
+   </property>
+  </action>
+  <action name="actionSample_definition">
+   <property name="text">
+    <string>Sample definition</string>
+   </property>
+  </action>
+  <action name="actionCDB">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>CDB</string>
+   </property>
+  </action>
+  <action name="actionPals">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>PALS</string>
    </property>
   </action>
  </widget>

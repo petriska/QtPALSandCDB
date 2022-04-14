@@ -27,7 +27,7 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+    QApplication a(argc, argv);    
     a.setOrganizationName("PASLAB");
     a.setOrganizationDomain("UJFI FEI STU");
     a.setApplicationName("QtPALSandCDB");
