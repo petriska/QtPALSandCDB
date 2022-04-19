@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QCloseEvent>
+#include <QSettings>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -26,5 +27,6 @@ private slots:
 private:
     bool maybeSave();
     Ui::MainWindow *ui;
+    QSettings settings;
 };
 #endif // MAINWINDOW_H

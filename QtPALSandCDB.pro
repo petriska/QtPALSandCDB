@@ -37,6 +37,7 @@ SOURCES += \
     DRS/musbstd.c \
     DRS/mxml.c \
     DRS/strlcpy.c \
+    histplot.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -47,6 +48,7 @@ HEADERS += \
     DRS/musbstd.h \
     DRS/mxml.h \
     DRS/strlcpy.h \
+    histplot.h \
     include/drs4header.h \
     include/libusb-1.0/libusb.h \
     mainwindow.h
@@ -69,6 +71,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     QtPALSandCDB.ico \
+    README.md \
     lib/x64/libusb-1.0.lib \
     pict/QtPALSandCDB.png \
     resources.rc
