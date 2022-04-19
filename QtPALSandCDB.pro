@@ -68,7 +68,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    QtPALSandCDB.ico \
     lib/x64/libusb-1.0.lib \
+    pict/QtPALSandCDB.png \
     resources.rc
 
 RESOURCES += \
